@@ -9,6 +9,7 @@ import torch.nn.parallel
 import torch.utils.data
 from dataset import PointcloudPatchDataset, SequentialPointcloudPatchSampler, SequentialShapeRandomPointcloudPatchSampler
 from pcpnet import PCPNet, MSPCPNet
+import time
 
 
 def parse_arguments():
@@ -251,4 +252,6 @@ def eval_pcpnet(opt):
 
 if __name__ == '__main__':
     eval_opt = parse_arguments()
+    Tstart=time.perf_counter()
     eval_pcpnet(eval_opt)
+    print("Elapse: {}".format(time.perf_counter()-Tstart))

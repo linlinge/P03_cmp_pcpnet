@@ -1,3 +1,10 @@
+
+# Modified Record
+* record elapsed time
+* a tool to convert the file (x y z nx ny nz) to file (x y z) and file (nx ny nz)
+* 
+
+---
 # PCPNet
 This is our implementation of [PCPNet](http://geometry.cs.ucl.ac.uk/projects/2018/pcpnet/),
 a network that estimates local geometric properties such as normals and curvature from point clouds.
